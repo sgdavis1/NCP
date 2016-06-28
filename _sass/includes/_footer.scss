@@ -1,0 +1,12 @@
+.site-footer {
+  @extend %padding-regular;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: lighten($text-color, 30%);
+  font-size: 0.9rem;
+
+  .copyright {
+    margin-bottom: 1em;
+  }
+}

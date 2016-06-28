@@ -1,0 +1,74 @@
+// Header text feature
+.call-out {
+  @extend %padding-regular;
+  display: inline-block;
+  width: 100%;
+  background-color:$header-desc-background-color;
+  background-size: cover;
+  background-position-y: 40%;
+  font-size: 1.2em;
+  text-align: center;
+  color: $header-desc-text-color;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    clear: both;
+
+    @media screen and (min-width: 800px) {
+      .one-half.column {
+        float: left;
+        width: 50%;
+      }
+      .one-half.column:first-of-type {
+        padding-right: 10px;
+      }
+    }
+
+    .icon {
+      .fa-circle { color: $brand-bg; }
+      a { color: $brand-fg; }
+      font-size: 3rem;
+    }
+
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Post listing
+.posts {
+  .post-teaser {
+    @extend %padding-regular;
+    width: 100%;
+    margin-bottom: 0;
+    display: inline-block;
+    background-size: $feature-image-size;
+    border-bottom: 1px solid $border-color;
+    p a:hover {
+      @extend %link-hover;
+    }
+  }
+  .excerpt {
+    margin-top: 1em;
+  }
+}
+// Pagination
+.pagination .button {
+  margin: 0 1.5em;
+  i {
+    vertical-align: middle;
+  }
+}
+.pagination {
+  padding: $padding-small $padding-large 0 $padding-large;
+  text-align: center;
+}

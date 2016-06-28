@@ -1,0 +1,62 @@
+.site-header {
+  @extend %padding-small;
+  background: $brand-bg;
+  color: $brand-fg;
+  border-bottom: 1px solid $border-color;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
+  a {
+    color: $brand-link-color;
+  }
+
+  .avatar {
+    height: 2em;
+    width: 2em;
+    float: left;
+    margin-top: 16px;
+    border-radius: 0.2em;
+    margin-right: 1em;
+  }
+
+  .site-title {
+    float: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5;
+
+    .tagline {
+      font-family: "Kaushan Script", serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+  }
+
+  .site-nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 1.5;
+      float: right;
+      text-align: right;
+    }
+    li {
+      display: inline;
+      float: left;
+      margin-right: 0.4em;
+    }
+    @media (max-width: 1100px) {
+      ul {
+        display: inline-block;
+        float: left;
+        padding-top: $padding-small;
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+}
