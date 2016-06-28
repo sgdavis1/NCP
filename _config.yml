@@ -1,0 +1,102 @@
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://example.com" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  # Meta
+  title: "North Corridor Parents"
+  tagline: "Information for parents of students in the ICCSD"
+  avatar: logo.png
+  # Email MD5 hash:
+  gravatar: 
+  # used by search engines:
+  description: "Blog posts and Supporting documents for the North Corridor Parents group of the Iowa City School District. Information useful for all parents anywhere in the ICCSD."
+
+  # Header and footer text
+  header_text: >
+    <div class="container">
+      <div class="one-half column facebook">
+        <div class="icon">
+          <a href="http://facebook.com/NorthCorridorParents">
+            <span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook"></i></span>
+          </a>
+        </div>
+        <div>Like us on Facebook</div>
+      </div>
+      <div class="one-half column twitter">
+        <div class="icon">
+          <a href="http://twitter.com/NCParentsInfo">
+            <span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter"></i></span>
+          </a>
+        </div>
+        <div>Follow us on Twitter</div>
+      </div>
+    </div>
+  header_text_feature_image: "img/banner.jpg"
+  footer_text: >
+   <div class="copyright">&copy; Copyright North Corridor Parents group. Views expressed are explicitly held by the NCP organization, and do not necessarily reflect the views of any individuals in support of this group.</div>
+   <div>Powered by <a href="http://jekyllrb.com">Jekyll</a> with a custom theme heavily based on the <a href="https://rohanchandra.github.io/project/type/">Type Theme</a></div>
+
+  # Icons
+  rss: false
+  email_address: # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook: "NorthCorridorParents"
+  flickr:
+  github: 
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: "NCParentsInfo"
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic|Kaushan+Script"
+
+  # Post navigation
+  post_navigation: true
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate]
+
+# Contentful
+contentful:
+  spaces:
+    - ncp: # Jekyll _data folder identifier - Required
+        space: <SPACE_ID>
+        content_types:
+          article: SysDateMapper
+        access_token: <ACCESS_TOKEN>
