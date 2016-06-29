@@ -3,3 +3,4 @@ _data/contentful
 .sass-cache
 Gemfile.lock
 _posts
+_config.yml
