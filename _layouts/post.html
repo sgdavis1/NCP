@@ -24,7 +24,7 @@ layout: default
     </a>
     {% endif %}
     {% if page.next.url %}
-    <a id="next-post" href="{{ site.baseurl }}{{ page.next.url }}">
+    <a id="next-post" {% unless page.previous.url %} class="first-post" {% endunless %} href="{{ site.baseurl }}{{ page.next.url }}">
        <span class="page-title">{{ page.next.title }}</span>
        <span class="nav-label">
         {{ site.theme.str_next }} <i class="fa fa-chevron-right"></i>

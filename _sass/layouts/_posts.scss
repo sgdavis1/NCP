@@ -81,13 +81,17 @@ header {
   }
 
   a {
-    padding: 2em 3em;
+    font-size: .8em;
+    padding: 2em 1em;
     border: 1px solid rgba(255, 255, 255, 0);
     text-align: center;
     width: 50%;
   }
   a:hover {
     @extend a.button:hover;
+  }
+  a.first-post {
+    margin-left: 50%;
   }
 
   i {
