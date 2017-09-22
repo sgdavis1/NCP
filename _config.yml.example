@@ -1,6 +1,8 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://northcorridorparents.org" # the base hostname & protocol for your site
+destination: ../../public_html
+exclude: ["LICENSE", "Rakefile", "Gemfile", "Gemfile.lock", "README.md"]
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
